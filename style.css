@@ -433,3 +433,129 @@ footer{
     flex: 1;
     padding: 50px;
 }
+
+
+/* Base styles for mobile devices */
+body {
+    font-family: 'lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Mobile-first design (default) */
+
+/* Media Query for tablets and smaller screens */
+@media only screen and (max-width: 768px) {
+    .navTop {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menuItem {
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    .slider {
+        clip-path: none; /* Adjust for mobile */
+        background-size: cover;
+    }
+
+    .sliderWrapper {
+        display: block;
+        width: 100%;
+    }
+
+    .sliderItem {
+        width: 100%;
+    }
+
+    .sliderTitle {
+        font-size: 35px;
+        right: 10%;
+    }
+
+    .sliderPrice {
+        font-size: 35px;
+        left: 10%;
+    }
+
+    .buyButton {
+        font-size: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .productDetails {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .productTitle {
+        font-size: 45px;
+    }
+
+    .productImg {
+        width: 100%;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .galleryItem {
+        width: 100%;
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerLeft {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .fMenuTitle {
+        font-size: 18px;
+    }
+}
+
+/* Media Query for very small mobile devices (up to 480px) */
+@media only screen and (max-width: 480px) {
+    .navTop {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .menuItem {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .sliderTitle {
+        font-size: 25px;
+        right: 5%;
+    }
+
+    .sliderPrice {
+        font-size: 25px;
+        left: 5%;
+    }
+
+    .buyButton {
+        font-size: 18px;
+    }
+
+    .productTitle {
+        font-size: 35px;
+    }
+
+    .galleryItem {
+        padding: 10px;
+    }
+}
